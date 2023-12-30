@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap');
+    #map { 
+        height: 620px; 
+        width:  100%; 
+        margin-top: 10px;
+        border-radius: 10px;
+        
+    }
+    body{
+        /*background-image: linear-gradient(180deg, #133441, #022332 );*/
+        font-family: 'Sora', sans-serif;
+        background-image: url(imagens/ufamm-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    h2{
+        color: white;
+    }
+        
+ </style>
+</head>
+<body>
+    <h2>Sua Localização</h2>
+    <input type="text" placeholder="Sua Localização">
+    <input type="text" placeholder="Destino">  
+    <div id="map"></div>
+    <script src="script.js"></script> 
+</body>
+</html>

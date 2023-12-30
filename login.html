@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        
+       *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(imagens/ufamm-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        form{
+            font-family: 'Sora', sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.647);
+            width: 400px;
+            height: 270px;
+            margin: 15% auto auto auto;
+            padding: 12px;
+            border-radius: 15px;
+        }
+        
+        input{
+            font-family: 'Poppins', sans-serif;
+            display: block; 
+            margin: 16px auto;
+            width: 250px; 
+            height: 30px;            
+            padding: 10px;
+            color: white;
+            background-color: rgba(34, 50, 58, 0.359);            
+            border-radius: 15px;
+            font-size: 16px ;
+        }
+        h1{
+            font-family: 'Sora', sans-serif;
+            font-weight: 500;
+            margin: 6px;
+            text-align: center;
+        }
+        input#botao{
+            padding: 0px;
+            background-color: rgb(3, 87, 116);
+            cursor: pointer;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>CAMPUS MAP UFAM</h1>   
+        <input type="text" placeholder="Nome de usuário" id="login">
+        <input type="password" placeholder="Senha" required id="senha">
+        <input id=botao value="Entrar" type="submit" onclick="logar(); return false">        
+
+    </form>
+
+    <script>
+        function logar(){
+            let login = document.getElementById('login').value;
+            let senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                
+                location.href='map.html'
+            }            
+            else {
+                alert('Usuário ou senha incorretos')
+            }
+       };
+    </script>
+</body>
+</html>
+
