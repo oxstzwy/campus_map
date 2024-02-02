@@ -5,7 +5,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
     L.marker([-3.096, -59.969]).addTo(map)
-        .bindPopup('welcome to Hell')
+        .bindPopup('Bem vindo a Universidade Federal do amazonas')
         .openPopup(); 
 
 
